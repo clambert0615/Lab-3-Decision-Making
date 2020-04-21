@@ -6,19 +6,19 @@ namespace Lab_3_Decision_Making
     {
         static void Main(string[] args)
         {
-            
+
             bool goOn = true;
             Console.WriteLine("Please enter you name.");
             string name = Console.ReadLine();
 
             while (goOn == true)
             {
-                
+
                 Console.WriteLine($"{name} Enter a number between 1 and 100");
                 int number = int.Parse(Console.ReadLine());
 
-                if (number % 2 != 0 && number <= 100 && number >=1)
-                { 
+                if (number % 2 != 0 && number <= 100 && number >= 1)
+                {
                     Console.WriteLine($"{number} is odd");
                 }
                 else if (number >= 2 && number <= 25)
@@ -29,7 +29,7 @@ namespace Lab_3_Decision_Making
                 {
                     Console.WriteLine("Even");
                 }
-                else if (number >= 60 && number <= 100)
+                else if (number > 60 && number <= 100)
                 {
                     Console.WriteLine($"{number} is even");
                 }
@@ -63,7 +63,7 @@ namespace Lab_3_Decision_Making
                     }
                 }
             }
-            }
         }
     }
+}   
 
